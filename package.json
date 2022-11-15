@@ -4,14 +4,18 @@
   "devDependencies": {
     "@changesets/cli": "^2.25.2",
     "@plasticine-design/eslint-config": "workspace:*",
+    "@plasticine-design/stylelint-config": "workspace:*",
     "eslint": "^8.27.0",
     "prettier": "^2.7.1",
+    "stylelint": "^14.15.0",
+    "stylelint-config-standard": "^29.0.0",
     "turbo": "^1.6.3"
   },
   "scripts": {
     "changeset:add": "changeset add",
     "changeset:version": "changeset version",
     "changeset:publish": "changeset publish",
-    "publish:eslint-config": "turbo run lint && pnpm run changeset:version && pnpm run changeset:publish"
+    "publish:eslint-config": "turbo run lint && pnpm run changeset:version && pnpm run changeset:publish",
+    "publish:stylelint-config": "turbo run lint --filter stylelint-config && pnpm run changeset:version && pnpm run changeset:publish"
   }
 }
