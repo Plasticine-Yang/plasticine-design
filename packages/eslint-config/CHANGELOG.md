@@ -1,5 +1,11 @@
 # @plasticine-design/eslint-config
 
+## 0.0.3
+
+### Patch Changes
+
+- add publishConfig and repository property to package.json and add README.md
+
 ## 0.0.2
 
 ### Patch Changes
