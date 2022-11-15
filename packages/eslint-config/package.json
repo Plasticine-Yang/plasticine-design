@@ -7,11 +7,15 @@
     "index.js"
   ],
   "main": "index.js",
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "lint": "eslint index.js"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "url": "https://github.com/Plasticine-Yang/plasticine-design/tree/main/packages/eslint-config"
   },
   "peerDependencies": {
     "eslint": "^8.27.0"
