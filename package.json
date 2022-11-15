@@ -11,6 +11,7 @@
   "scripts": {
     "changeset:add": "changeset add",
     "changeset:version": "changeset version",
-    "publish:eslint-config": "turbo run lint && pnpm run changeset:version && pnpm -C packages/eslint-config publish"
+    "changeset:publish": "changeset publish",
+    "publish:eslint-config": "turbo run lint && pnpm run changeset:version && pnpm run changeset:publish"
   }
 }
