@@ -9,8 +9,8 @@
     "turbo": "^1.6.3"
   },
   "scripts": {
-    "changeset:add": "changeset",
+    "changeset:add": "changeset add",
     "changeset:version": "changeset version",
-    "changeset:publish": "changeset publish"
+    "publish:eslint-config": "turbo run lint && pnpm run changeset:version && pnpm -C packages/eslint-config publish"
   }
 }
