@@ -9,6 +9,8 @@
     "turbo": "^1.6.3"
   },
   "scripts": {
-    "changeset": "changeset"
+    "changeset:add": "changeset",
+    "changeset:version": "changeset version",
+    "changeset:publish": "changeset publish"
   }
 }
