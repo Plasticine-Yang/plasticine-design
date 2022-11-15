@@ -15,7 +15,7 @@
     "changeset:add": "changeset add",
     "changeset:version": "changeset version",
     "changeset:publish": "changeset publish",
-    "publish:eslint-config": "turbo run lint --filter eslint-config && pnpm run changeset:version && pnpm run changeset:publish",
-    "publish:stylelint-config": "turbo run lint --filter stylelint-config && pnpm run changeset:version && pnpm run changeset:publish"
+    "publish:eslint-config": "turbo run lint --filter eslint-config && pnpm run changeset:publish",
+    "publish:stylelint-config": "turbo run lint --filter stylelint-config && pnpm run changeset:publish"
   }
 }
