@@ -13,6 +13,13 @@ module.exports = defineConfig({
     'plugin:prettier/recommended',
   ],
   plugins: ['@typescript-eslint'],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.ts', '.d.ts', '.tsx', '.js', '.mjs', '.cjs', '.jsx'],
+      },
+    },
+  },
   overrides: [
     // 允许在 js, cjs, mjs, jsx 中使用 require
     {
