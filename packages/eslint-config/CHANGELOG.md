@@ -1,5 +1,11 @@
 # @plasticine-design/eslint-config
 
+## 0.0.4
+
+### Patch Changes
+
+- add import/resolver setting
+
 ## 0.0.3
 
 ### Patch Changes
