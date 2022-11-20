@@ -1,5 +1,11 @@
 # @plasticine-design/eslint-config
 
+## 0.0.5
+
+### Patch Changes
+
+- turn off 'import/no-unresolved' rule
+
 ## 0.0.4
 
 ### Patch Changes

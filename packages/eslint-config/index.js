@@ -6,13 +6,16 @@ module.exports = defineConfig({
     browser: true,
     node: true,
   },
+
   extends: [
     'eslint:recommended',
     'plugin:import/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
   ],
+
   plugins: ['@typescript-eslint'],
+
   settings: {
     'import/resolver': {
       node: {
@@ -20,6 +23,7 @@ module.exports = defineConfig({
       },
     },
   },
+
   overrides: [
     // 允许在 js, cjs, mjs, jsx 中使用 require
     {
@@ -29,4 +33,8 @@ module.exports = defineConfig({
       },
     },
   ],
+
+  rules: {
+    'import/no-unresolved': 'off',
+  },
 })
