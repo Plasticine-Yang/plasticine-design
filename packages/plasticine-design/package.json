@@ -1,0 +1,33 @@
+{
+  "name": "plasticine-design",
+  "version": "0.0.0",
+  "description": "A React UI library",
+  "keywords": [
+    "plasticine-design",
+    "component library",
+    "ui framework",
+    "ui",
+    "design",
+    "react"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c --configPlugin typescript"
+  },
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "url": "https://github.com/Plasticine-Yang/plasticine-design/tree/main/packages/plasticine-design"
+  },
+  "dependencies": {
+    "@plasticine-design/components": "workspace:*"
+  }
+}

@@ -11,7 +11,7 @@
     "esModuleInterop": true,
     "rootDir": ".",
     "paths": {
-      "@plasticine-design/*": ["packages/*"]
+      "@plasticine-design/*": ["packages/*/src"]
     }
   }
 }

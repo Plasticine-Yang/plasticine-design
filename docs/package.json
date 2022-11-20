@@ -1,0 +1,13 @@
+{
+  "name": "@plasticine-design/docs",
+  "private": true,
+  "scripts": {
+    "dev": "island dev .",
+    "build": "island build .",
+    "preview": "island start ."
+  },
+  "dependencies": {
+    "islandjs": "^0.7.6",
+    "plasticine-design": "workspace:*"
+  }
+}
