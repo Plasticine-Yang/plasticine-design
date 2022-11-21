@@ -1,5 +1,6 @@
 {
   "name": "@plasticine-design/components",
+  "private": true,
   "version": "0.0.0",
   "description": "Components of plasticine-design",
   "license": "MIT",

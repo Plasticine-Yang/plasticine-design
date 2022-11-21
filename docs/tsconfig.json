@@ -1,15 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "strict": true,
-    "skipLibCheck": true,
     "jsx": "react-jsx",
     "paths": {
-      "plasticine-design": ["../packages/plasticine-design"]
+      "plasticine-design": ["../packages/plasticine-design"],
+      "@plasticine-design/*": ["../packages/*/src"]
     }
   }
 }

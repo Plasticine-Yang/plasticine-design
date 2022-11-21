@@ -12,7 +12,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c --configPlugin typescript"
+    "build": "vite build"
   },
   "main": "index.js",
   "exports": {
@@ -29,5 +29,8 @@
   },
   "dependencies": {
     "@plasticine-design/components": "workspace:*"
+  },
+  "devDependencies": {
+    "vite": "^3.2.4"
   }
 }
