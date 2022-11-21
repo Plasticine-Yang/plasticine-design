@@ -3,7 +3,6 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
 import { PROJECT_ROOT } from '@plasticine-design/shared'
-console.log('='.repeat(100), PROJECT_ROOT)
 
 export default defineConfig({
   resolve: {
@@ -20,7 +19,7 @@ export default defineConfig({
       entry: 'src/index.ts',
       name: 'PlasticineDesign',
       fileName: 'plasticine-design',
-      formats: ['cjs', 'es', 'iife', 'umd'],
+      formats: ['cjs', 'es'],
     },
 
     rollupOptions: {
