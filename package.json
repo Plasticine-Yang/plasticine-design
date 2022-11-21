@@ -27,6 +27,7 @@
     "publish:eslint-config": "turbo run lint --filter eslint-config && pnpm run changeset:publish",
     "publish:stylelint-config": "turbo run lint --filter stylelint-config && pnpm run changeset:publish",
     "publish:commitlint-config": "turbo run lint build --filter commitlint-config && pnpm run changeset:publish",
+    "publish:plasticine-design": "turbo run lint build --filter plasticine-design && pnpm run changeset:publish",
     "prepare": "husky install"
   }
 }
