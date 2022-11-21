@@ -1,6 +1,6 @@
 {
   "name": "plasticine-design",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A React UI library",
   "keywords": [
     "plasticine-design",
@@ -12,14 +12,20 @@
   ],
   "license": "MIT",
   "scripts": {
+    "lint": "eslint src --fix",
     "build": "vite build"
   },
-  "main": "index.js",
+  "main": "./dist/plasticine-design.js",
+  "module": "./dist/plasticine-design.mjs",
   "exports": {
     ".": {
-      "import": "./index.js"
+      "require": "./dist/plasticine-design.js",
+      "import": "./dist/plasticine-design.mjs"
     }
   },
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
