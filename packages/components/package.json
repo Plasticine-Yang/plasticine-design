@@ -4,22 +4,6 @@
   "version": "0.0.0",
   "description": "Components of plasticine-design",
   "license": "MIT",
-  "scripts": {
-    "build": "rollup -c --configPlugin typescript"
-  },
-  "main": "dist/index.js",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js"
-    }
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
-  "repository": {
-    "url": "https://github.com/Plasticine-Yang/plasticine-design/tree/main/packages/components"
-  },
   "devDependencies": {
     "@rollup/plugin-alias": "^4.0.2",
     "@rollup/plugin-node-resolve": "^15.0.1",

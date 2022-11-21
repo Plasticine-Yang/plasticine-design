@@ -1,9 +1,8 @@
 import { defineConfig } from 'islandjs'
-import { resolve } from 'path'
-import { fileURLToPath } from 'url'
 
-const __dirname = fileURLToPath(new URL('.', import.meta.url))
-const PROJECT_ROOT = resolve(__dirname, '..', '..')
+import { resolve } from 'path'
+
+import { PROJECT_ROOT } from '@plasticine-design/shared'
 
 export default defineConfig({
   lang: 'en-US',

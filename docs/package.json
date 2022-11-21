@@ -10,6 +10,7 @@
     "islandjs": "^0.7.6"
   },
   "devDependencies": {
+    "@plasticine-design/shared": "workspace:*",
     "rollup": "^3.3.0"
   }
 }

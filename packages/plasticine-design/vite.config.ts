@@ -1,16 +1,16 @@
-import { resolve } from 'path'
-import { fileURLToPath } from 'url'
 import { defineConfig } from 'vite'
 
-const __dirname = fileURLToPath(new URL('.', import.meta.url))
-const PROJECT_ROOT = resolve(__dirname, '..', '..')
+import { resolve } from 'path'
+
+import { PROJECT_ROOT } from '@plasticine-design/shared'
+console.log('='.repeat(100), PROJECT_ROOT)
 
 export default defineConfig({
   resolve: {
     alias: [
       {
         find: /^@plasticine-design\/(.*)$/,
-        replacement: `${resolve(PROJECT_ROOT, 'packages')}/$1/src/index.ts`,
+        replacement: resolve(PROJECT_ROOT, 'packages/$1/src/index.ts'),
       },
     ],
   },

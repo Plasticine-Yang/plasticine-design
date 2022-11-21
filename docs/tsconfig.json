@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
+    "baseUrl": ".",
     "paths": {
       "plasticine-design": ["../packages/plasticine-design"],
       "@plasticine-design/*": ["../packages/*/src"]
     }
-  }
+  },
+  "include": ["./.island/config.ts"]
 }

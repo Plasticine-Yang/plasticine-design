@@ -1,17 +1,12 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
     "target": "ES2022",
     "module": "ESNext",
-    "baseUrl": ".",
     "moduleResolution": "Node",
     "strict": true,
     "allowJs": false,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "rootDir": ".",
-    "paths": {
-      "@plasticine-design/*": ["packages/*/src"]
-    }
+    "jsx": "react-jsx"
   }
 }
