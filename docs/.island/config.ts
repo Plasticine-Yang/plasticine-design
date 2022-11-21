@@ -28,6 +28,18 @@ export default defineConfig({
         label: '简体中文',
         title: 'Plasticine Design',
         description: 'A React Component Library',
+        outlineTitle: '目录',
+        nav: [{ text: '组件', link: '/zh-CN/components/button' }],
+        sidebar: {
+          '/zh-CN/': [
+            {
+              text: 'Basic 基础组件',
+              items: [
+                { text: 'Button 按钮', link: '/zh-CN/components/button' },
+              ],
+            },
+          ],
+        },
       },
 
       '/en-US/': {
