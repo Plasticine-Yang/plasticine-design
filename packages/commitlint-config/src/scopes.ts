@@ -1,5 +1,5 @@
 import { getPackages } from './utils'
 
-const scopes = [...getPackages('packages')]
+const scopes = [...getPackages('packages'), 'docs']
 
 export { scopes }
