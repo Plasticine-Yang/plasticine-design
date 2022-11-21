@@ -1,5 +1,11 @@
 # @plasticine-design/commitlint-config
 
+## 0.0.3
+
+### Patch Changes
+
+- add docs scope
+
 ## 0.0.2
 
 ### Patch Changes
