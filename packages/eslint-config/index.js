@@ -14,8 +14,6 @@ module.exports = defineConfig({
     'plugin:prettier/recommended',
   ],
 
-  plugins: ['@typescript-eslint'],
-
   settings: {
     'import/resolver': {
       node: {
@@ -35,6 +33,10 @@ module.exports = defineConfig({
   ],
 
   rules: {
+    // eslint-plugin-import
     'import/no-unresolved': 'off',
+
+    // TypeScript
+    '@typescript-eslint/no-empty-function': 'off',
   },
 })
