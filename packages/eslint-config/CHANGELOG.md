@@ -1,5 +1,11 @@
 # @plasticine-design/eslint-config
 
+## 0.0.6
+
+### Patch Changes
+
+- turn off '@typescript-eslint/no-empty-function' rule
+
 ## 0.0.5
 
 ### Patch Changes
