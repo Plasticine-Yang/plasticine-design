@@ -1,5 +1,7 @@
 import { defineConfig } from 'tsup'
 
+import { sassPlugin } from 'esbuild-sass-plugin'
+
 export default defineConfig({
   entry: ['src/index.ts'],
   outDir: 'dist',
@@ -8,4 +10,5 @@ export default defineConfig({
   clean: true,
   shims: true,
   sourcemap: true,
+  esbuildPlugins: [sassPlugin({})],
 })

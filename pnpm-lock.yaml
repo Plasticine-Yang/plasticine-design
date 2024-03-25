@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  esbuild-sass-plugin>esbuild: 0.19.5
+
 importers:
 
   .:
@@ -41,6 +44,9 @@ importers:
       cz-git:
         specifier: ^1.9.0
         version: 1.9.0
+      esbuild-sass-plugin:
+        specifier: ^2.16.1
+        version: 2.16.1(esbuild@0.19.5)
       eslint:
         specifier: ^8.57.0
         version: 8.57.0
@@ -82,6 +88,13 @@ importers:
         version: 4.4.5(@types/node@20.11.30)
 
   packages/components/button:
+    dependencies:
+      '@plasticine-design/shared':
+        specifier: workspace:*
+        version: link:../../shared
+      '@plasticine-design/styles':
+        specifier: workspace:^
+        version: link:../../styles
     devDependencies:
       react:
         specifier: ^18.2.0
@@ -95,6 +108,8 @@ importers:
       '@plasticine-design/button':
         specifier: workspace:*
         version: link:../components/button
+
+  packages/shared: {}
 
   packages/storybook:
     devDependencies:
@@ -128,6 +143,8 @@ importers:
       storybook:
         specifier: ^8.0.4
         version: 8.0.4(react-dom@18.2.0)(react@18.2.0)
+
+  packages/styles: {}
 
 packages:
 
@@ -6074,6 +6091,16 @@ packages:
       - supports-color
     dev: true
 
+  /esbuild-sass-plugin@2.16.1(esbuild@0.19.5):
+    resolution: {integrity: sha512-mBB2aEF0xk7yo+Q9pSUh8xYED/1O2wbAM6IauGkDrqy6pl9SbJNakLeLGXiNpNujWIudu8TJTZCv2L5AQYRXtA==}
+    peerDependencies:
+      esbuild: 0.19.5
+    dependencies:
+      esbuild: 0.19.5
+      resolve: 1.22.8
+      sass: 1.72.0
+    dev: true
+
   /esbuild@0.18.17:
     resolution: {integrity: sha512-1GJtYnUxsJreHYA0Y+iQz2UEykonY66HNWOb0yXYZi9/kNrORUEHVg87eQsCtqh59PEJ5YVZJO98JHznMJSWjg==}
     engines: {node: '>=12'}
@@ -7299,6 +7326,10 @@ packages:
   /ignore@5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
     engines: {node: '>= 4'}
+    dev: true
+
+  /immutable@4.3.5:
+    resolution: {integrity: sha512-8eabxkth9gZatlwl5TBuJnCsoTADlL6ftEr7A4qgdaTsPyreilDSnUk57SO+jfKcNtxPa22U5KK6DSeAYhpBJw==}
     dev: true
 
   /import-fresh@3.3.0:
@@ -9113,7 +9144,7 @@ packages:
     dependencies:
       nanoid: 3.3.6
       picocolors: 1.0.0
-      source-map-js: 1.0.2
+      source-map-js: 1.2.0
     dev: true
 
   /postcss@8.4.38:
@@ -9781,6 +9812,16 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
+  /sass@1.72.0:
+    resolution: {integrity: sha512-Gpczt3WA56Ly0Mn8Sl21Vj94s1axi9hDIzDFn9Ph9x3C3p4nNyvsqJoQyVXKou6cBlfFWEgRW4rT8Tb4i3XnVA==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.6.0
+      immutable: 4.3.5
+      source-map-js: 1.2.0
+    dev: true
+
   /scheduler@0.23.0:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
     dependencies:
@@ -10012,11 +10053,6 @@ packages:
     dependencies:
       ip: 2.0.0
       smart-buffer: 4.2.0
-    dev: true
-
-  /source-map-js@1.0.2:
-    resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
-    engines: {node: '>=0.10.0'}
     dev: true
 
   /source-map-js@1.2.0:

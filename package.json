@@ -31,6 +31,7 @@
     "@types/react-dom": "^18.2.22",
     "commitizen": "^4.3.0",
     "cz-git": "^1.9.0",
+    "esbuild-sass-plugin": "^2.16.1",
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
@@ -41,5 +42,10 @@
     "turbo": "latest",
     "typescript": "^5.4.3",
     "vitest": "^1.4.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "esbuild-sass-plugin>esbuild": "0.19.5"
+    }
   }
 }

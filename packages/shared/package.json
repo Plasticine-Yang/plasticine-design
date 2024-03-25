@@ -1,5 +1,5 @@
 {
-  "name": "@plasticine-design/button",
+  "name": "@plasticine-design/shared",
   "version": "0.0.0",
   "type": "module",
   "files": [
@@ -22,17 +22,5 @@
     "build": "tsup --minify",
     "lint": "eslint src --fix",
     "test": "vitest"
-  },
-  "devDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "dependencies": {
-    "@plasticine-design/shared": "workspace:*",
-    "@plasticine-design/styles": "workspace:*"
   }
 }
