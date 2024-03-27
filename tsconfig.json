@@ -16,6 +16,6 @@
     "allowSyntheticDefaultImports": true,
     "downlevelIteration": true
   },
-  "include": ["packages", "styles.d.ts"],
+  "include": ["packages"],
   "exclude": ["**/node_modules", "**/dist", "**/.turbo"]
 }

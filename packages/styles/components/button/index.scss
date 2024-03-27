@@ -1,4 +1,4 @@
-@import '@plasticine-design/styles';
+@use '../../variables' as *;
 
 .#{$class-name-prefix}-button {
   background: cyan;

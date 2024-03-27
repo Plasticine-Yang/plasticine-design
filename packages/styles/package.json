@@ -4,6 +4,7 @@
   "type": "module",
   "files": [
     "index.scss",
+    "components",
     "variables",
     "package.json",
     "README.md"

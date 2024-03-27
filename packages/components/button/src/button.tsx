@@ -1,8 +1,6 @@
 import { memo, type FC, type MouseEventHandler } from 'react'
 import { getClassNameWithPrefix } from '@plasticine-design/shared'
 
-import './styles/button.scss'
-
 export interface ButtonProps {
   type: 'primary' | 'secondary'
   onClick?: MouseEventHandler<HTMLButtonElement>
