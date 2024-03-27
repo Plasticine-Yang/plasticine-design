@@ -1,5 +1,5 @@
 // export types
-export { type ButtonProps } from './button'
+export type * from './types'
 
 // export components
 export { default as Button } from './button'

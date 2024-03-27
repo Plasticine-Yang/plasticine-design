@@ -1,5 +1,37 @@
 @use '../../variables' as *;
 
 .#{$class-name-prefix}-button {
-  background: cyan;
+  // shared
+  border: none;
+  cursor: pointer;
+
+  // variant
+  &-variant {
+    &--solid {
+    }
+  }
+
+  // color
+  &-color {
+    &--default {
+      background: #3f3f45;
+      color: #ffffff;
+    }
+  }
+
+  // size
+  &-size {
+    &--medium {
+      height: 2.5rem;
+      min-width: 5rem;
+      padding: 0 16px;
+    }
+  }
+
+  // radius
+  &-radius {
+    &--medium {
+      border-radius: 12px;
+    }
+  }
 }

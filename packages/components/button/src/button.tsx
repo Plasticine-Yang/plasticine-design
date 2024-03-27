@@ -1,17 +1,33 @@
-import { memo, type FC, type MouseEventHandler } from 'react'
-import { getClassNameWithPrefix } from '@plasticine-design/shared'
+import { memo, type FC, PropsWithChildren, useMemo } from 'react'
 
-export interface ButtonProps {
-  type: 'primary' | 'secondary'
-  onClick?: MouseEventHandler<HTMLButtonElement>
-}
+import { getClassNameWithPrefix, clsx } from '@plasticine-design/shared'
 
-const Button: FC<ButtonProps> = memo((props) => {
-  const { type, onClick } = props
+import type { ButtonProps } from './types'
+
+const baseClassName = getClassNameWithPrefix('button')
+
+const Button: FC<PropsWithChildren<ButtonProps>> = memo((props) => {
+  const { variant = 'solid', color = 'default', size = 'medium', radius = 'medium', children, onClick } = props
+
+  const className = useMemo(
+    () =>
+      clsx(
+        baseClassName,
+        // className with variant
+        `${baseClassName}-variant--${variant}`,
+        // className with color
+        `${baseClassName}-color--${color}`,
+        // className with size
+        `${baseClassName}-size--${size}`,
+        // className with radius
+        `${baseClassName}-radius--${radius}`,
+      ),
+    [],
+  )
 
   return (
-    <button className={getClassNameWithPrefix('button')} onClick={onClick}>
-      Hello {type}
+    <button className={className} onClick={onClick}>
+      {children}
     </button>
   )
 })
