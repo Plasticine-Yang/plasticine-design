@@ -1,0 +1,9 @@
+@use '../variables' as *;
+
+@mixin css-border-width-variables {
+  :root {
+    --#{$class-name-prefix}-border-width-small: #{map-get($border-width, small)};
+    --#{$class-name-prefix}-border-width-medium: #{map-get($border-width, medium)};
+    --#{$class-name-prefix}-border-width-large: #{map-get($border-width, large)};
+  }
+}
