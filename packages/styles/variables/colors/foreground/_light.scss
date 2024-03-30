@@ -1,7 +1,10 @@
+@use '../palette' as *;
+
 $foreground-light-color: (
-  default: 0 0% 0%,
-  secondary: 0 0% 100%,
-  success: 0 0% 100%,
-  warning: 0 0% 100%,
-  danger: 0 0% 100%,
+  default: map-get($palette-shared, black),
+  primary: map-get($palette-shared, white),
+  secondary: map-get($palette-shared, white),
+  success: map-get($palette-shared, white),
+  warning: map-get($palette-shared, white),
+  danger: map-get($palette-shared, white),
 );

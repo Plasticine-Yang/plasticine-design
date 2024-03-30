@@ -4,32 +4,32 @@
   &--solid {
     &.#{$class-name-prefix}-button-color {
       &--default {
-        background: hsl(var(--#{$class-name-prefix}-color-default));
+        background: hsl(var(--#{$class-name-prefix}-background-color-default));
         color: hsl(var(--#{$class-name-prefix}-foreground-color-default));
       }
 
       &--primary {
-        background: hsl(var(--#{$class-name-prefix}-color-primary));
+        background: hsl(var(--#{$class-name-prefix}-background-color-primary));
         color: hsl(var(--#{$class-name-prefix}-foreground-color-primary));
       }
 
       &--secondary {
-        background: hsl(var(--#{$class-name-prefix}-color-secondary));
+        background: hsl(var(--#{$class-name-prefix}-background-color-secondary));
         color: hsl(var(--#{$class-name-prefix}-foreground-color-secondary));
       }
 
       &--success {
-        background: hsl(var(--#{$class-name-prefix}-color-success));
+        background: hsl(var(--#{$class-name-prefix}-background-color-success));
         color: hsl(var(--#{$class-name-prefix}-foreground-color-success));
       }
 
       &--warning {
-        background: hsl(var(--#{$class-name-prefix}-color-warning));
+        background: hsl(var(--#{$class-name-prefix}-background-color-warning));
         color: hsl(var(--#{$class-name-prefix}-foreground-color-warning));
       }
 
       &--danger {
-        background: hsl(var(--#{$class-name-prefix}-color-danger));
+        background: hsl(var(--#{$class-name-prefix}-background-color-danger));
         color: hsl(var(--#{$class-name-prefix}-foreground-color-danger));
       }
     }

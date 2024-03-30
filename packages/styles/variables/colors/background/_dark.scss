@@ -1,8 +1,10 @@
+@use '../palette' as *;
+
 $background-dark-color: (
   default: 240 5% 84%,
-  primary: 212 100% 47%,
-  secondary: 270 67% 47%,
-  success: 146 79% 44%,
-  warning: 37 91% 55%,
-  danger: 339 90% 51%,
+  primary: map-get($palette-dark, primary-400),
+  secondary: map-get($palette-dark, secondary-500),
+  success: map-get($palette-dark, success-400),
+  warning: map-get($palette-dark, warning-400),
+  danger: map-get($palette-dark, danger-400),
 );

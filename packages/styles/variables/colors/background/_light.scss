@@ -1,8 +1,10 @@
+@use '../palette' as *;
+
 $background-light-color: (
-  default: 240 5% 84%,
-  primary: 212 100% 47%,
-  secondary: 270 67% 47%,
-  success: 146 79% 44%,
-  warning: 37 91% 55%,
-  danger: 339 90% 51%,
+  default: map-get($palette-light, default-300),
+  primary: map-get($palette-light, primary-500),
+  secondary: map-get($palette-light, secondary-500),
+  success: map-get($palette-light, success-500),
+  warning: map-get($palette-light, warning-500),
+  danger: map-get($palette-light, danger-500),
 );
