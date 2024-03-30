@@ -1,0 +1,5 @@
+@use 'color' as *;
+
+@mixin css-variables {
+  @include css-color-variables;
+}

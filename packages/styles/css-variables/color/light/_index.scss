@@ -2,12 +2,12 @@
 @use 'foreground' as *;
 @use 'palette' as *;
 
-@mixin css-light-variables {
+@mixin css-color-light-variables {
   @media (prefers-color-scheme: light) {
     :root,
     .light {
       // palette
-      @include css-palette-variables-light;
+      @include css-palette-light-variables;
 
       // background colors
       @include css-background-color-light-variables;

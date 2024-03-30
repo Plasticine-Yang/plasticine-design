@@ -1,7 +1,6 @@
-@use '../../colors' as *;
-@use '../../prefix' as *;
+@use '../../../variables' as *;
 
-@mixin css-palette-variables-dark {
+@mixin css-palette-dark-variables {
   // default
   --#{$class-name-prefix}-color-default-50: #{map-get($palette-dark, default-50)};
   --#{$class-name-prefix}-color-default-100: #{map-get($palette-dark, default-100)};

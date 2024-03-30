@@ -1,5 +1,4 @@
-@use '../../colors' as *;
-@use '../../prefix' as *;
+@use '../../../variables' as *;
 
 @mixin css-background-color-dark-variables {
   --#{$class-name-prefix}-background-color-default: #{map-get($background-dark-color, default)};

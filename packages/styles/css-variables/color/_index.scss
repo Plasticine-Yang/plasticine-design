@@ -1,0 +1,7 @@
+@use 'dark' as *;
+@use 'light' as *;
+
+@mixin css-color-variables {
+  @include css-color-dark-variables;
+  @include css-color-light-variables;
+}

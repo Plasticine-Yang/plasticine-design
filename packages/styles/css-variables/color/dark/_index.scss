@@ -2,12 +2,12 @@
 @use 'foreground' as *;
 @use 'palette' as *;
 
-@mixin css-dark-variables {
+@mixin css-color-dark-variables {
   @media (prefers-color-scheme: dark) {
     :root,
     .dark {
       // palette
-      @include css-palette-variables-dark;
+      @include css-palette-dark-variables;
 
       // background colors
       @include css-background-color-dark-variables;
