@@ -1,0 +1,37 @@
+@use '../../../variables' as *;
+
+@mixin button-faded-variant {
+  &--faded {
+    &.#{$class-name-prefix}-button-color {
+      &--default {
+        background: hsl(var(--#{$class-name-prefix}-color-default));
+        color: hsl(var(--#{$class-name-prefix}-foreground-color-default));
+      }
+
+      &--primary {
+        background: hsl(var(--#{$class-name-prefix}-color-primary));
+        color: hsl(var(--#{$class-name-prefix}-foreground-color-primary));
+      }
+
+      &--secondary {
+        background: hsl(var(--#{$class-name-prefix}-color-secondary));
+        color: hsl(var(--#{$class-name-prefix}-foreground-color-secondary));
+      }
+
+      &--success {
+        background: hsl(var(--#{$class-name-prefix}-color-success));
+        color: hsl(var(--#{$class-name-prefix}-foreground-color-success));
+      }
+
+      &--warning {
+        background: hsl(var(--#{$class-name-prefix}-color-warning));
+        color: hsl(var(--#{$class-name-prefix}-foreground-color-warning));
+      }
+
+      &--danger {
+        background: hsl(var(--#{$class-name-prefix}-color-danger));
+        color: hsl(var(--#{$class-name-prefix}-foreground-color-danger));
+      }
+    }
+  }
+}

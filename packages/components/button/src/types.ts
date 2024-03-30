@@ -5,13 +5,13 @@ export interface ButtonProps {
    * The button appearance style.
    * @default "solid"
    */
-  variant?: 'solid'
+  variant?: 'solid' | 'faded' | 'bordered' | 'light' | 'flat' | 'ghost' | 'shadow'
 
   /**
    * The button color theme.
    * @default "default"
    */
-  color?: 'default'
+  color?: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'danger'
 
   /**
    * The button size.

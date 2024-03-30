@@ -1,7 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { fn } from '@storybook/test'
 
-import '@plasticine-design/styles/components/button/index.scss'
+// import '@plasticine-design/styles/components/button/index.scss'
+import '@plasticine-design/styles/index.scss'
 
 import { Button } from '../src'
 
@@ -26,6 +27,34 @@ type Story = StoryObj<typeof meta>
 export const Usage: Story = {
   args: {
     children: 'Button',
+  },
+}
+
+export const Variant: Story = {
+  args: {
+    children: 'Button',
+    variant: 'bordered',
+  },
+}
+
+export const Color: Story = {
+  args: {
+    children: 'Button',
+    color: 'primary',
+  },
+}
+
+export const Size: Story = {
+  args: {
+    children: 'Button',
+    size: 'small',
+  },
+}
+
+export const Radius: Story = {
+  args: {
+    children: 'Button',
+    radius: 'full',
   },
 }
 

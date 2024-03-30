@@ -1,0 +1,11 @@
+@use '../../colors' as *;
+@use '../../prefix' as *;
+
+@mixin css-foreground-color-dark-variables {
+  --#{$class-name-prefix}-foreground-color-default: #{map-get($foreground-dark-color, default)};
+  --#{$class-name-prefix}-foreground-color-primary: #{map-get($foreground-dark-color, primary)};
+  --#{$class-name-prefix}-foreground-color-secondary: #{map-get($foreground-dark-color, secondary)};
+  --#{$class-name-prefix}-foreground-color-success: #{map-get($foreground-dark-color, success)};
+  --#{$class-name-prefix}-foreground-color-warning: #{map-get($foreground-dark-color, warning)};
+  --#{$class-name-prefix}-foreground-color-danger: #{map-get($foreground-dark-color, danger)};
+}

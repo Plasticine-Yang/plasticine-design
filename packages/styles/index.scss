@@ -1,2 +1,6 @@
+@use 'variables/css-variables' as *;
+
 @forward 'components';
 @forward 'variables';
+
+@include css-variables;

@@ -1,0 +1,19 @@
+@use 'background' as *;
+@use 'foreground' as *;
+@use 'palette' as *;
+
+@mixin css-light-variables {
+  @media (prefers-color-scheme: light) {
+    :root,
+    .light {
+      // palette
+      @include css-palette-variables-light;
+
+      // background colors
+      @include css-background-color-light-variables;
+
+      // foreground colors
+      @include css-foreground-color-light-variables;
+    }
+  }
+}

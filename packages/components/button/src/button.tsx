@@ -22,7 +22,7 @@ const Button: FC<PropsWithChildren<ButtonProps>> = memo((props) => {
         // className with radius
         `${baseClassName}-radius--${radius}`,
       ),
-    [],
+    [color, radius, size, variant],
   )
 
   return (
@@ -31,5 +31,7 @@ const Button: FC<PropsWithChildren<ButtonProps>> = memo((props) => {
     </button>
   )
 })
+
+Button.displayName = 'PlasticineDesignButton'
 
 export default Button

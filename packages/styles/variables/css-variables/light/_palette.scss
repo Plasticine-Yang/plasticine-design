@@ -1,0 +1,76 @@
+@use '../../colors' as *;
+@use '../../prefix' as *;
+
+@mixin css-palette-variables-light {
+  // default
+  --#{$class-name-prefix}-color-default-50: #{map-get($palatte-light, default-50)};
+  --#{$class-name-prefix}-color-default-100: #{map-get($palatte-light, default-100)};
+  --#{$class-name-prefix}-color-default-200: #{map-get($palatte-light, default-200)};
+  --#{$class-name-prefix}-color-default-300: #{map-get($palatte-light, default-300)};
+  --#{$class-name-prefix}-color-default-400: #{map-get($palatte-light, default-400)};
+  --#{$class-name-prefix}-color-default-500: #{map-get($palatte-light, default-500)};
+  --#{$class-name-prefix}-color-default-600: #{map-get($palatte-light, default-600)};
+  --#{$class-name-prefix}-color-default-700: #{map-get($palatte-light, default-700)};
+  --#{$class-name-prefix}-color-default-800: #{map-get($palatte-light, default-800)};
+  --#{$class-name-prefix}-color-default-900: #{map-get($palatte-light, default-900)};
+
+  // primary
+  --#{$class-name-prefix}-color-priamry-50: #{map-get($palatte-light, priamry-50)};
+  --#{$class-name-prefix}-color-priamry-100: #{map-get($palatte-light, priamry-100)};
+  --#{$class-name-prefix}-color-priamry-200: #{map-get($palatte-light, priamry-200)};
+  --#{$class-name-prefix}-color-priamry-300: #{map-get($palatte-light, priamry-300)};
+  --#{$class-name-prefix}-color-priamry-400: #{map-get($palatte-light, priamry-400)};
+  --#{$class-name-prefix}-color-priamry-500: #{map-get($palatte-light, priamry-500)};
+  --#{$class-name-prefix}-color-priamry-600: #{map-get($palatte-light, priamry-600)};
+  --#{$class-name-prefix}-color-priamry-700: #{map-get($palatte-light, priamry-700)};
+  --#{$class-name-prefix}-color-priamry-800: #{map-get($palatte-light, priamry-800)};
+  --#{$class-name-prefix}-color-priamry-900: #{map-get($palatte-light, priamry-900)};
+
+  // secondary
+  --#{$class-name-prefix}-color-secondary-50: #{map-get($palatte-light, secondary-50)};
+  --#{$class-name-prefix}-color-secondary-100: #{map-get($palatte-light, secondary-100)};
+  --#{$class-name-prefix}-color-secondary-200: #{map-get($palatte-light, secondary-200)};
+  --#{$class-name-prefix}-color-secondary-300: #{map-get($palatte-light, secondary-300)};
+  --#{$class-name-prefix}-color-secondary-400: #{map-get($palatte-light, secondary-400)};
+  --#{$class-name-prefix}-color-secondary-500: #{map-get($palatte-light, secondary-500)};
+  --#{$class-name-prefix}-color-secondary-600: #{map-get($palatte-light, secondary-600)};
+  --#{$class-name-prefix}-color-secondary-700: #{map-get($palatte-light, secondary-700)};
+  --#{$class-name-prefix}-color-secondary-800: #{map-get($palatte-light, secondary-800)};
+  --#{$class-name-prefix}-color-secondary-900: #{map-get($palatte-light, secondary-900)};
+
+  // success
+  --#{$class-name-prefix}-color-success-50: #{map-get($palatte-light, success-50)};
+  --#{$class-name-prefix}-color-success-100: #{map-get($palatte-light, success-100)};
+  --#{$class-name-prefix}-color-success-200: #{map-get($palatte-light, success-200)};
+  --#{$class-name-prefix}-color-success-300: #{map-get($palatte-light, success-300)};
+  --#{$class-name-prefix}-color-success-400: #{map-get($palatte-light, success-400)};
+  --#{$class-name-prefix}-color-success-500: #{map-get($palatte-light, success-500)};
+  --#{$class-name-prefix}-color-success-600: #{map-get($palatte-light, success-600)};
+  --#{$class-name-prefix}-color-success-700: #{map-get($palatte-light, success-700)};
+  --#{$class-name-prefix}-color-success-800: #{map-get($palatte-light, success-800)};
+  --#{$class-name-prefix}-color-success-900: #{map-get($palatte-light, success-900)};
+
+  // warning
+  --#{$class-name-prefix}-color-warning-50: #{map-get($palatte-light, warning-50)};
+  --#{$class-name-prefix}-color-warning-100: #{map-get($palatte-light, warning-100)};
+  --#{$class-name-prefix}-color-warning-200: #{map-get($palatte-light, warning-200)};
+  --#{$class-name-prefix}-color-warning-300: #{map-get($palatte-light, warning-300)};
+  --#{$class-name-prefix}-color-warning-400: #{map-get($palatte-light, warning-400)};
+  --#{$class-name-prefix}-color-warning-500: #{map-get($palatte-light, warning-500)};
+  --#{$class-name-prefix}-color-warning-600: #{map-get($palatte-light, warning-600)};
+  --#{$class-name-prefix}-color-warning-700: #{map-get($palatte-light, warning-700)};
+  --#{$class-name-prefix}-color-warning-800: #{map-get($palatte-light, warning-800)};
+  --#{$class-name-prefix}-color-warning-900: #{map-get($palatte-light, warning-900)};
+
+  // danger
+  --#{$class-name-prefix}-color-danger-50: #{map-get($palatte-light, danger-50)};
+  --#{$class-name-prefix}-color-danger-100: #{map-get($palatte-light, danger-100)};
+  --#{$class-name-prefix}-color-danger-200: #{map-get($palatte-light, danger-200)};
+  --#{$class-name-prefix}-color-danger-300: #{map-get($palatte-light, danger-300)};
+  --#{$class-name-prefix}-color-danger-400: #{map-get($palatte-light, danger-400)};
+  --#{$class-name-prefix}-color-danger-500: #{map-get($palatte-light, danger-500)};
+  --#{$class-name-prefix}-color-danger-600: #{map-get($palatte-light, danger-600)};
+  --#{$class-name-prefix}-color-danger-700: #{map-get($palatte-light, danger-700)};
+  --#{$class-name-prefix}-color-danger-800: #{map-get($palatte-light, danger-800)};
+  --#{$class-name-prefix}-color-danger-900: #{map-get($palatte-light, danger-900)};
+}

@@ -1,37 +1,19 @@
 @use '../../variables' as *;
+@use 'radius' as *;
+@use 'size' as *;
+@use 'variants' as *;
 
 .#{$class-name-prefix}-button {
   // shared
   border: none;
   cursor: pointer;
 
-  // variant
-  &-variant {
-    &--solid {
-    }
-  }
-
-  // color
-  &-color {
-    &--default {
-      background: #3f3f45;
-      color: #ffffff;
-    }
-  }
+  // variants
+  @include button-variants;
 
   // size
-  &-size {
-    &--medium {
-      height: 2.5rem;
-      min-width: 5rem;
-      padding: 0 16px;
-    }
-  }
+  @include button-size;
 
   // radius
-  &-radius {
-    &--medium {
-      border-radius: 12px;
-    }
-  }
+  @include button-radius;
 }
