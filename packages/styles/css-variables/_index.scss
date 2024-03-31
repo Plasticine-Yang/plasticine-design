@@ -1,7 +1,0 @@
-@use 'border-width' as *;
-@use 'color' as *;
-
-@mixin css-variables {
-  @include css-border-width-variables;
-  @include css-color-variables;
-}

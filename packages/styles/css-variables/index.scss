@@ -1,0 +1,5 @@
+@use 'border-width' as *;
+@use 'color' as *;
+
+@include css-border-width-variables;
+@include css-color-variables;

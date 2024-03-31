@@ -1,7 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { fn } from '@storybook/test'
 
+// import '@plasticine-design/styles/css-variables/index.scss'
 // import '@plasticine-design/styles/components/button/index.scss'
+
 import '@plasticine-design/styles/index.scss'
 
 import { Button } from '../src'
