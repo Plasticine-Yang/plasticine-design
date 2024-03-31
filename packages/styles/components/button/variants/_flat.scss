@@ -1,0 +1,43 @@
+@use '../../../variables' as *;
+
+@mixin button-flat-variant {
+  &--flat {
+    border: none;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &.#{$class-name-prefix}-button-color {
+      &--default {
+        color: hsl(var(--#{$class-name-prefix}-foreground-color-default));
+        background: hsl(var(--#{$class-name-prefix}-background-color-default) / 0.4);
+      }
+
+      &--primary {
+        color: hsl(var(--#{$class-name-prefix}-background-color-primary));
+        background: hsl(var(--#{$class-name-prefix}-background-color-primary) / 0.2);
+      }
+
+      &--secondary {
+        color: hsl(var(--#{$class-name-prefix}-background-color-secondary));
+        background: hsl(var(--#{$class-name-prefix}-background-color-secondary) / 0.2);
+      }
+
+      &--success {
+        color: hsl(var(--#{$class-name-prefix}-background-color-success));
+        background: hsl(var(--#{$class-name-prefix}-background-color-success) / 0.2);
+      }
+
+      &--warning {
+        color: hsl(var(--#{$class-name-prefix}-background-color-warning));
+        background: hsl(var(--#{$class-name-prefix}-background-color-warning) / 0.2);
+      }
+
+      &--danger {
+        color: hsl(var(--#{$class-name-prefix}-background-color-danger));
+        background: hsl(var(--#{$class-name-prefix}-background-color-danger) / 0.2);
+      }
+    }
+  }
+}

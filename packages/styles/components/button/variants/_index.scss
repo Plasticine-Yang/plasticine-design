@@ -1,5 +1,6 @@
 @use 'bordered' as *;
 @use 'faded' as *;
+@use 'flat' as *;
 @use 'light' as *;
 @use 'solid' as *;
 
@@ -7,6 +8,7 @@
   &-variant {
     @include button-bordered-variant;
     @include button-faded-variant;
+    @include button-flat-variant;
     @include button-light-variant;
     @include button-solid-variant;
   }

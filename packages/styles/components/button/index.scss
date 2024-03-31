@@ -6,10 +6,10 @@
 .#{$class-name-prefix}-button {
   // shared
   border: none;
-  cursor: pointer;
-  transition-property: background;
+  transition-property: background, opacity;
   transition-timing-function: ease;
   transition-duration: 250ms;
+  cursor: pointer;
 
   // variants
   @include button-variants;
