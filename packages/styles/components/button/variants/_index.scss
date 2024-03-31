@@ -1,9 +1,11 @@
-@use 'solid' as *;
+@use 'bordered' as *;
 @use 'faded' as *;
+@use 'solid' as *;
 
 @mixin button-variants {
   &-variant {
-    @include button-solid-variant;
+    @include button-bordered-variant;
     @include button-faded-variant;
+    @include button-solid-variant;
   }
 }

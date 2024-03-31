@@ -1,0 +1,41 @@
+@use '../../../variables' as *;
+
+@mixin button-bordered-variant {
+  &--bordered {
+    border-width: var(--#{$class-name-prefix}-border-width-medium);
+    border-style: solid;
+    background: transparent;
+
+    &.#{$class-name-prefix}-button-color {
+      &--default {
+        border-color: hsl(var(--#{$class-name-prefix}-background-color-default));
+        color: hsl(var(--#{$class-name-prefix}-foreground-color-default));
+      }
+
+      &--primary {
+        border-color: hsl(var(--#{$class-name-prefix}-background-color-primary));
+        color: hsl(var(--#{$class-name-prefix}-background-color-primary));
+      }
+
+      &--secondary {
+        border-color: hsl(var(--#{$class-name-prefix}-background-color-secondary));
+        color: hsl(var(--#{$class-name-prefix}-background-color-secondary));
+      }
+
+      &--success {
+        border-color: hsl(var(--#{$class-name-prefix}-background-color-success));
+        color: hsl(var(--#{$class-name-prefix}-background-color-success));
+      }
+
+      &--warning {
+        border-color: hsl(var(--#{$class-name-prefix}-background-color-warning));
+        color: hsl(var(--#{$class-name-prefix}-background-color-warning));
+      }
+
+      &--danger {
+        border-color: hsl(var(--#{$class-name-prefix}-background-color-danger));
+        color: hsl(var(--#{$class-name-prefix}-background-color-danger));
+      }
+    }
+  }
+}
