@@ -1,0 +1,52 @@
+@use '../../../variables' as *;
+
+@mixin button-light-variant {
+  &--light {
+    border: none;
+    background: transparent;
+
+    &.#{$class-name-prefix}-button-color {
+      &--default {
+        color: hsl(var(--#{$class-name-prefix}-foreground-color-default));
+        &:hover {
+          background: hsl(var(--#{$class-name-prefix}-background-color-default) / 0.4);
+        }
+      }
+
+      &--primary {
+        color: hsl(var(--#{$class-name-prefix}-background-color-primary));
+        &:hover {
+          background: hsl(var(--#{$class-name-prefix}-background-color-primary) / 0.2);
+        }
+      }
+
+      &--secondary {
+        color: hsl(var(--#{$class-name-prefix}-background-color-secondary));
+        &:hover {
+          background: hsl(var(--#{$class-name-prefix}-background-color-secondary) / 0.2);
+        }
+      }
+
+      &--success {
+        color: hsl(var(--#{$class-name-prefix}-background-color-success));
+        &:hover {
+          background: hsl(var(--#{$class-name-prefix}-background-color-success) / 0.2);
+        }
+      }
+
+      &--warning {
+        color: hsl(var(--#{$class-name-prefix}-background-color-warning));
+        &:hover {
+          background: hsl(var(--#{$class-name-prefix}-background-color-warning) / 0.2);
+        }
+      }
+
+      &--danger {
+        color: hsl(var(--#{$class-name-prefix}-background-color-danger));
+        &:hover {
+          background: hsl(var(--#{$class-name-prefix}-background-color-danger) / 0.2);
+        }
+      }
+    }
+  }
+}
