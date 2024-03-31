@@ -1,5 +1,11 @@
 # @plasticine-design/react
 
+## 0.1.1
+
+### Patch Changes
+
+- @plasticine-design/button@0.1.1
+
 ## 0.1.0
 
 ### Minor Changes
