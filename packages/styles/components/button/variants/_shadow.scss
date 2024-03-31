@@ -1,0 +1,55 @@
+@use '../../../variables' as *;
+
+@mixin button-shadow($shadow-color) {
+  box-shadow:
+    0 0 #0000,
+    0 0 #0000,
+    0 10px 15px -3px $shadow-color,
+    0 4px 6px -4px $shadow-color;
+}
+
+@mixin button-shadow-variant {
+  &--shadow {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &.#{$class-name-prefix}-button-color {
+      &--default {
+        background: hsl(var(--#{$class-name-prefix}-background-color-default));
+        color: hsl(var(--#{$class-name-prefix}-foreground-color-default));
+        @include button-shadow(hsl(var(--#{$class-name-prefix}-background-color-default) / 0.4));
+      }
+
+      &--primary {
+        background: hsl(var(--#{$class-name-prefix}-background-color-primary));
+        color: hsl(var(--#{$class-name-prefix}-foreground-color-primary));
+        @include button-shadow(hsl(var(--#{$class-name-prefix}-background-color-primary) / 0.4));
+      }
+
+      &--secondary {
+        background: hsl(var(--#{$class-name-prefix}-background-color-secondary));
+        color: hsl(var(--#{$class-name-prefix}-foreground-color-secondary));
+        @include button-shadow(hsl(var(--#{$class-name-prefix}-background-color-secondary) / 0.4));
+      }
+
+      &--success {
+        background: hsl(var(--#{$class-name-prefix}-background-color-success));
+        color: hsl(var(--#{$class-name-prefix}-foreground-color-success));
+        @include button-shadow(hsl(var(--#{$class-name-prefix}-background-color-success) / 0.4));
+      }
+
+      &--warning {
+        background: hsl(var(--#{$class-name-prefix}-background-color-warning));
+        color: hsl(var(--#{$class-name-prefix}-foreground-color-warning));
+        @include button-shadow(hsl(var(--#{$class-name-prefix}-background-color-warning) / 0.4));
+      }
+
+      &--danger {
+        background: hsl(var(--#{$class-name-prefix}-background-color-danger));
+        color: hsl(var(--#{$class-name-prefix}-foreground-color-danger));
+        @include button-shadow(hsl(var(--#{$class-name-prefix}-background-color-danger) / 0.4));
+      }
+    }
+  }
+}

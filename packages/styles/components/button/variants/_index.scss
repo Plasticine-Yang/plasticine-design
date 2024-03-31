@@ -3,6 +3,7 @@
 @use 'flat' as *;
 @use 'ghost' as *;
 @use 'light' as *;
+@use 'shadow' as *;
 @use 'solid' as *;
 
 @mixin button-variants {
@@ -12,6 +13,7 @@
     @include button-flat-variant;
     @include button-ghost-variant;
     @include button-light-variant;
+    @include button-shadow-variant;
     @include button-solid-variant;
   }
 }

@@ -6,7 +6,7 @@
 .#{$class-name-prefix}-button {
   // shared
   border: none;
-  transition-property: background, opacity;
+  transition-property: background, opacity, box-shadow;
   transition-timing-function: ease;
   transition-duration: 250ms;
   cursor: pointer;
