@@ -1,7 +1,7 @@
 const { readdirSync } = require('fs')
 const { resolve } = require('path')
 
-const scopePaths = ['packages', 'apps']
+const scopePaths = ['packages', 'packages/components', 'apps']
 const packages = scopePaths.reduce((result, scopePath) => {
   const scopes = readdirSync(resolve(__dirname, scopePath))
 
