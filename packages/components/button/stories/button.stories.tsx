@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { fn } from '@storybook/test'
 
 // import '@plasticine-design/styles/css-variables/index.scss'
 // import '@plasticine-design/styles/components/button/index.scss'
@@ -20,7 +19,13 @@ const meta: Meta<typeof Button> = {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-  args: { variant: 'solid', color: 'default', size: 'medium', radius: 'medium', onClick: fn() },
+  args: {
+    variant: 'solid',
+    color: 'default',
+    size: 'medium',
+    radius: 'medium',
+    disablePressAnimation: false,
+  },
 }
 
 type Story = StoryObj<typeof meta>

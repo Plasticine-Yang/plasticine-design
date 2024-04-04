@@ -11,7 +11,7 @@
 @mixin button-shadow-variant {
   &--shadow {
     &:hover {
-      opacity: 0.8;
+      opacity: var(--#{$class-name-prefix}-button-hover-opacity);
     }
 
     &.#{$class-name-prefix}-button-color {

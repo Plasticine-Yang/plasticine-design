@@ -1,22 +1,27 @@
-@use '../../variables' as *;
+@use 'press-animation' as *;
 @use 'radius' as *;
 @use 'size' as *;
 @use 'variants' as *;
 
+@use '../../variables' as *;
+
 .#{$class-name-prefix}-button {
   // shared
   border: none;
-  transition-property: background, opacity, box-shadow;
+  transition-property: background, opacity, box-shadow, transform;
   transition-timing-function: ease;
   transition-duration: 250ms;
   cursor: pointer;
 
-  // variants
-  @include button-variants;
+  // press animation
+  @include button-press-animation;
+
+  // radius
+  @include button-radius;
 
   // size
   @include button-size;
 
-  // radius
-  @include button-radius;
+  // variants
+  @include button-variants;
 }

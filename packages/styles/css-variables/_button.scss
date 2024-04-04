@@ -1,0 +1,8 @@
+@use '../variables' as *;
+
+@mixin css-button-variables {
+  :root {
+    --#{$class-name-prefix}-button-hover-opacity: #{$button-hover-opacity};
+    --#{$class-name-prefix}-button-active-scale: #{$button-active-scale};
+  }
+}

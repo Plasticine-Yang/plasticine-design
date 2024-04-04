@@ -1,32 +1,44 @@
-import { memo, type FC, PropsWithChildren, useMemo } from 'react'
+import { PropsWithChildren, memo, useMemo, type FC } from 'react'
 
-import { getClassNameWithPrefix, clsx } from '@plasticine-design/shared'
+import { clsx } from '@plasticine-design/shared'
 
+import { BUTTON_CLASS_NAME_PREFIX } from './constants'
 import type { ButtonProps } from './types'
 
-const baseClassName = getClassNameWithPrefix('button')
-
 const Button: FC<PropsWithChildren<ButtonProps>> = memo((props) => {
-  const { variant = 'solid', color = 'default', size = 'medium', radius = 'medium', children, onClick } = props
+  const {
+    variant = 'solid',
+    color = 'default',
+    size = 'medium',
+    radius = 'medium',
+    disablePressAnimation = false,
+    className: externalClassName,
+    children,
+    ...restProps
+  } = props
 
   const className = useMemo(
     () =>
       clsx(
-        baseClassName,
+        BUTTON_CLASS_NAME_PREFIX,
         // className with variant
-        `${baseClassName}-variant--${variant}`,
+        `${BUTTON_CLASS_NAME_PREFIX}-variant--${variant}`,
         // className with color
-        `${baseClassName}-color--${color}`,
+        `${BUTTON_CLASS_NAME_PREFIX}-color--${color}`,
         // className with size
-        `${baseClassName}-size--${size}`,
+        `${BUTTON_CLASS_NAME_PREFIX}-size--${size}`,
         // className with radius
-        `${baseClassName}-radius--${radius}`,
+        `${BUTTON_CLASS_NAME_PREFIX}-radius--${radius}`,
+        // className with press animation
+        !disablePressAnimation && `${BUTTON_CLASS_NAME_PREFIX}-press-animation`,
+        // external className
+        externalClassName,
       ),
-    [color, radius, size, variant],
+    [color, disablePressAnimation, externalClassName, radius, size, variant],
   )
 
   return (
-    <button className={className} onClick={onClick}>
+    <button className={className} {...restProps}>
       {children}
     </button>
   )

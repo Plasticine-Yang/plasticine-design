@@ -1,6 +1,6 @@
-import { type MouseEventHandler } from 'react'
+import { ButtonHTMLAttributes } from 'react'
 
-export interface ButtonProps {
+export interface CustomButtonProps {
   /**
    * The button appearance style.
    * @default "solid"
@@ -26,7 +26,10 @@ export interface ButtonProps {
   radius?: 'none' | 'small' | 'medium' | 'large' | 'full'
 
   /**
-   * The native button click event handler.
+   * Whether disable the button press animation.
+   * @default false
    */
-  onClick?: MouseEventHandler<HTMLButtonElement>
+  disablePressAnimation?: boolean
 }
+
+export type ButtonProps = CustomButtonProps & ButtonHTMLAttributes<HTMLButtonElement>

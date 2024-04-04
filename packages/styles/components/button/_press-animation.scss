@@ -1,0 +1,9 @@
+@use '../../variables' as *;
+
+@mixin button-press-animation {
+  &-press-animation {
+    &:active {
+      transform: scale(var(--#{$class-name-prefix}-button-active-scale));
+    }
+  }
+}
