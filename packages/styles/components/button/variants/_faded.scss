@@ -1,15 +1,15 @@
 @use '../../../variables' as *;
 
 @mixin button-faded-variant {
+  &--faded:hover:not(:disabled):not(&--disabled) {
+    opacity: var(--#{$class-name-prefix}-button-hover-opacity);
+  }
+
   &--faded {
     border-width: var(--#{$class-name-prefix}-border-width-medium);
     border-style: solid;
     border-color: hsl(var(--#{$class-name-prefix}-background-color-default));
     background: hsl(var(--#{$class-name-prefix}-color-default-100));
-
-    &:hover {
-      opacity: var(--#{$class-name-prefix}-button-hover-opacity);
-    }
 
     &.#{$class-name-prefix}-button-color {
       &--default {

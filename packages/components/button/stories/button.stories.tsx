@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import { fn } from '@storybook/test'
 
 // import '@plasticine-design/styles/css-variables/index.scss'
 // import '@plasticine-design/styles/components/button/index.scss'
@@ -25,6 +26,8 @@ const meta: Meta<typeof Button> = {
     size: 'medium',
     radius: 'medium',
     disablePressAnimation: false,
+    disabled: false,
+    onClick: fn(),
   },
 }
 

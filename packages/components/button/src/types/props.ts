@@ -30,6 +30,12 @@ export interface CustomButtonProps {
    * @default false
    */
   disablePressAnimation?: boolean
+
+  /**
+   * Whether the button is disabled.
+   * @default false
+   */
+  disabled?: boolean
 }
 
 export type ButtonProps = CustomButtonProps & ButtonHTMLAttributes<HTMLButtonElement>

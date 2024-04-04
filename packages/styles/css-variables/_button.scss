@@ -4,5 +4,6 @@
   :root {
     --#{$class-name-prefix}-button-hover-opacity: #{$button-hover-opacity};
     --#{$class-name-prefix}-button-active-scale: #{$button-active-scale};
+    --#{$class-name-prefix}-button-disabled-opacity: #{$button-disabled-opacity};
   }
 }

@@ -12,6 +12,7 @@ const Button: FC<PropsWithChildren<ButtonProps>> = memo((props) => {
     size = 'medium',
     radius = 'medium',
     disablePressAnimation = false,
+    disabled = false,
     className: externalClassName,
     children,
     ...restProps
@@ -31,14 +32,16 @@ const Button: FC<PropsWithChildren<ButtonProps>> = memo((props) => {
         `${BUTTON_CLASS_NAME_PREFIX}-radius--${radius}`,
         // className with press animation
         !disablePressAnimation && `${BUTTON_CLASS_NAME_PREFIX}-press-animation`,
+        // className with disabled
+        disabled && `${BUTTON_CLASS_NAME_PREFIX}--disabled`,
         // external className
         externalClassName,
       ),
-    [color, disablePressAnimation, externalClassName, radius, size, variant],
+    [color, disablePressAnimation, disabled, externalClassName, radius, size, variant],
   )
 
   return (
-    <button className={className} {...restProps}>
+    <button {...restProps} className={className} disabled={disabled}>
       {children}
     </button>
   )

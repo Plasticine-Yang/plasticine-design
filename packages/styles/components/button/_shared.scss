@@ -1,0 +1,8 @@
+@mixin button-shared {
+  border: none;
+  transition-property: background, opacity, box-shadow, transform;
+  transition-timing-function: ease;
+  transition-duration: 250ms;
+  user-select: none;
+  cursor: pointer;
+}

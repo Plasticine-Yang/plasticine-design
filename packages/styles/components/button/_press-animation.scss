@@ -1,7 +1,7 @@
 @use '../../variables' as *;
 
 @mixin button-press-animation {
-  &-press-animation {
+  &-press-animation:not(:disabled):not(&--disabled) {
     &:active {
       transform: scale(var(--#{$class-name-prefix}-button-active-scale));
     }

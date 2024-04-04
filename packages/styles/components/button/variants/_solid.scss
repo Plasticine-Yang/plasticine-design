@@ -1,11 +1,11 @@
 @use '../../../variables' as *;
 
 @mixin button-solid-variant {
-  &--solid {
-    &:hover {
-      opacity: var(--#{$class-name-prefix}-button-hover-opacity);
-    }
+  &--solid:hover:not(:disabled):not(&--disabled) {
+    opacity: var(--#{$class-name-prefix}-button-hover-opacity);
+  }
 
+  &--solid {
     &.#{$class-name-prefix}-button-color {
       &--default {
         background: hsl(var(--#{$class-name-prefix}-background-color-default));

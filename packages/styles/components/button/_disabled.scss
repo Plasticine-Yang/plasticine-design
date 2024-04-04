@@ -1,0 +1,8 @@
+@use '../../variables' as *;
+
+@mixin button-disabled {
+  &--disabled {
+    opacity: var(--#{$class-name-prefix}-button-disabled-opacity);
+    cursor: not-allowed;
+  }
+}

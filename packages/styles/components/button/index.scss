@@ -1,5 +1,7 @@
+@use 'disabled' as *;
 @use 'press-animation' as *;
 @use 'radius' as *;
+@use 'shared' as *;
 @use 'size' as *;
 @use 'variants' as *;
 
@@ -7,11 +9,10 @@
 
 .#{$class-name-prefix}-button {
   // shared
-  border: none;
-  transition-property: background, opacity, box-shadow, transform;
-  transition-timing-function: ease;
-  transition-duration: 250ms;
-  cursor: pointer;
+  @include button-shared;
+
+  // disabled
+  @include button-disabled;
 
   // press animation
   @include button-press-animation;
