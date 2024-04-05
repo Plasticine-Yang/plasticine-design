@@ -1,5 +1,7 @@
 import { ButtonHTMLAttributes } from 'react'
 
+import type { SharedColorProp, SharedSizeProp } from '@plasticine-design/shared'
+
 export interface CustomButtonProps {
   /**
    * The button appearance style.
@@ -11,13 +13,13 @@ export interface CustomButtonProps {
    * The button color theme.
    * @default "default"
    */
-  color?: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'danger'
+  color?: SharedColorProp
 
   /**
    * The button size.
    * @default "medium"
    */
-  size?: 'small' | 'medium' | 'large'
+  size?: SharedSizeProp
 
   /**
    * The button border radius.
