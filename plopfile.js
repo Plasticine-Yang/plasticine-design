@@ -35,7 +35,8 @@ export default function (
         type: 'append',
         path: './packages/styles/components/index.scss',
         template: "@forward '{{kebabCase componentName}}';",
-        pattern: ';',
+        // 贪婪匹配最后一行
+        pattern: /.*;(?!.*;)/s,
       },
     ],
   })
