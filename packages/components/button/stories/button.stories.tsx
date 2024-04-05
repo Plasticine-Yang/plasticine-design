@@ -1,10 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { fn } from '@storybook/test'
 
-// import '@plasticine-design/styles/css-variables/index.scss'
-// import '@plasticine-design/styles/components/button/index.scss'
-
-import '@plasticine-design/styles/index.scss'
+import { SHARED_COLOR_VALUES, SHARED_SIZE_VALUES } from '@plasticine-design/shared'
+import '@plasticine-design/styles/components/button/index.scss'
+import '@plasticine-design/styles/css-variables/index.scss'
 
 import { Button } from '../src'
 
@@ -29,42 +28,41 @@ const meta: Meta<typeof Button> = {
     disabled: false,
     onClick: fn(),
   },
+  argTypes: {
+    color: {
+      type: {
+        name: 'enum',
+        value: SHARED_COLOR_VALUES,
+      },
+    },
+    size: {
+      type: {
+        name: 'enum',
+        value: SHARED_SIZE_VALUES,
+      },
+    },
+  },
 }
 
 type Story = StoryObj<typeof meta>
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Usage: Story = {
+export const Default: Story = {
   args: {
     children: 'Button',
+    variant: 'solid',
+    color: 'default',
+    size: 'medium',
+    radius: 'medium',
+    disablePressAnimation: false,
+    disabled: false,
   },
 }
 
-export const Variant: Story = {
+export const Disabled: Story = {
   args: {
-    children: 'Button',
-    variant: 'bordered',
-  },
-}
-
-export const Color: Story = {
-  args: {
-    children: 'Button',
-    color: 'primary',
-  },
-}
-
-export const Size: Story = {
-  args: {
-    children: 'Button',
-    size: 'small',
-  },
-}
-
-export const Radius: Story = {
-  args: {
-    children: 'Button',
-    radius: 'full',
+    children: 'Disabled Button',
+    disabled: true,
   },
 }
 
