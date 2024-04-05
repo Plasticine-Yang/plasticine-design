@@ -47,6 +47,6 @@ const Button: FC<PropsWithChildren<ButtonProps>> = memo((props) => {
   )
 })
 
-Button.displayName = 'PlasticineDesignButton'
+Button.displayName = 'PlasticineDesign.Button'
 
 export default Button
