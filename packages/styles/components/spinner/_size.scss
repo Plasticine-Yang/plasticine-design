@@ -1,0 +1,24 @@
+@use '../../variables' as *;
+
+@mixin spinner-size {
+  &.#{$class-name-prefix}-spinner-size--small {
+    .#{$class-name-prefix}-spinner__wrapper {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+  }
+
+  &.#{$class-name-prefix}-spinner-size--medium {
+    .#{$class-name-prefix}-spinner__wrapper {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  &.#{$class-name-prefix}-spinner-size--large {
+    .#{$class-name-prefix}-spinner__wrapper {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@mixin display-full-block {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin round-border {
+  border-width: 3px;
+  border-radius: 50%;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}

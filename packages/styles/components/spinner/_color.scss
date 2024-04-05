@@ -1,0 +1,45 @@
+@use '../../variables' as *;
+
+@mixin spinner-color {
+  &.#{$class-name-prefix}-spinner-color--default {
+    .#{$class-name-prefix}-spinner__circle-1,
+    .#{$class-name-prefix}-spinner__circle-2 {
+      border-bottom-color: hsl(var(--#{$class-name-prefix}-background-color-default));
+    }
+  }
+
+  &.#{$class-name-prefix}-spinner-color--primary {
+    .#{$class-name-prefix}-spinner__circle-1,
+    .#{$class-name-prefix}-spinner__circle-2 {
+      border-bottom-color: hsl(var(--#{$class-name-prefix}-background-color-primary));
+    }
+  }
+
+  &.#{$class-name-prefix}-spinner-color--secondary {
+    .#{$class-name-prefix}-spinner__circle-1,
+    .#{$class-name-prefix}-spinner__circle-2 {
+      border-bottom-color: hsl(var(--#{$class-name-prefix}-background-color-secondary));
+    }
+  }
+
+  &.#{$class-name-prefix}-spinner-color--success {
+    .#{$class-name-prefix}-spinner__circle-1,
+    .#{$class-name-prefix}-spinner__circle-2 {
+      border-bottom-color: hsl(var(--#{$class-name-prefix}-background-color-success));
+    }
+  }
+
+  &.#{$class-name-prefix}-spinner-color--warning {
+    .#{$class-name-prefix}-spinner__circle-1,
+    .#{$class-name-prefix}-spinner__circle-2 {
+      border-bottom-color: hsl(var(--#{$class-name-prefix}-background-color-warning));
+    }
+  }
+
+  &.#{$class-name-prefix}-spinner-color--danger {
+    .#{$class-name-prefix}-spinner__circle-1,
+    .#{$class-name-prefix}-spinner__circle-2 {
+      border-bottom-color: hsl(var(--#{$class-name-prefix}-background-color-danger));
+    }
+  }
+}
