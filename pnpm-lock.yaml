@@ -136,6 +136,9 @@ importers:
       '@plasticine-design/button':
         specifier: workspace:*
         version: link:../components/button
+      '@plasticine-design/spinner':
+        specifier: workspace:^
+        version: link:../components/spinner
 
   packages/shared:
     dependencies:

@@ -24,6 +24,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@plasticine-design/button": "workspace:*"
+    "@plasticine-design/button": "workspace:*",
+    "@plasticine-design/spinner": "workspace:*"
   }
 }
