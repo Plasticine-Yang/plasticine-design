@@ -1,5 +1,17 @@
 # @plasticine-design/react
 
+## 0.3.0
+
+### Minor Changes
+
+- 5a14fa2: feat: add spinner component
+
+### Patch Changes
+
+- Updated dependencies [5a14fa2]
+  - @plasticine-design/spinner@0.1.0
+  - @plasticine-design/button@0.2.1
+
 ## 0.2.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @plasticine-design/styles
 
+## 0.3.0
+
+### Minor Changes
+
+- 5a14fa2: feat: add spinner component
+
 ## 0.2.0
 
 ### Minor Changes
