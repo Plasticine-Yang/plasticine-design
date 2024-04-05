@@ -23,8 +23,19 @@ export default function (
         type: 'addMany',
         base: 'plop-templates/component',
         templateFiles: 'plop-templates/component/**',
-        destination: './packages/components/{{dashCase componentName}}',
+        destination: './packages/components/{{kebabCase componentName}}',
         abortOnFail: true,
+      },
+      {
+        type: 'add',
+        path: './packages/styles/components/{{kebabCase componentName}}/index.scss',
+        templateFile: 'plop-templates/styles/component/index.scss.hbs',
+      },
+      {
+        type: 'append',
+        path: './packages/styles/components/index.scss',
+        template: "@forward '{{kebabCase componentName}}';",
+        pattern: ';',
       },
     ],
   })
