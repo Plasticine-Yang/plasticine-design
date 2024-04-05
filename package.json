@@ -10,6 +10,7 @@
     "play": "pnpm --filer=./apps/playground dev",
     "test": "vitest",
     "test:u": "vitest -u",
+    "create:component": "pnpm plop component",
     "release": "pnpm build && pnpm changeset publish",
     "commit": "cz",
     "prepare": "husky install"
