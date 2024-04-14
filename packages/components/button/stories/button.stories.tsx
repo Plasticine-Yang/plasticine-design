@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { fn } from '@storybook/test'
 
 import { SHARED_COLOR_VALUES, SHARED_SIZE_VALUES } from '@plasticine-design/shared'
 import '@plasticine-design/styles/components/button/index.scss'
@@ -26,7 +25,6 @@ const meta: Meta<typeof Button> = {
     radius: 'medium',
     disablePressAnimation: false,
     disabled: false,
-    onClick: fn(),
   },
   argTypes: {
     color: {
